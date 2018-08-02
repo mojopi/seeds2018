@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <style>
+    body {
+        background-image: url(./imgs/blackWatercolor4.png);
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+
+    #intro {
+        background-image: url(./imgs/blackWatercolor4.png);
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #title {
+        font-size: 36px;
+    }
+
+    #subtitle {
+        font-size: 28px;
+    }
+
+    #byline {
+        font-size: 24px;
+    }
+
+
+
+
+    #intro-textbox {
+        /*        background-image: url(./imgs/blueWatercolor4.png);
+*/
+        position: relative;
+        top: 100px;
+        width: 80%;
+        font-size: 20px;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 100px;
+        font-family: 'Josefin Slab', serif;
+        color: white;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: violet;
+    }
+
+    .containerLeft {
+        margin: 0px;
+        width: 50%;
+        height: 800px;
+        position: absolute;
+        padding-top: 100px;
+        left: 0%;
+        /*        background-color: blue;
+
+*/
+        /*        background-image: url(./imgs/blackWatercolor4.png);
+*/
+    }
+
+    .containerRight {
+        margin: 0px;
+        width: 50%;
+        height: 800px;
+        position: relative;
+        padding-top: 40px;
+        left: 50%;
+        /*        background-color: red;
+*/
+        /*        background-image: url(./imgs/blackWatercolor4.png);
+*/
+    }
+
+    .bubble {
+        z-index: 2;
+        top: 0%;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .textBox {
+        z-index: 2;
+        text-align: left;
+        padding: 10px;
+        position: relative;
+        width: 600px;
+        height: 800px;
+        top: 10%;
+        margin-top: 10px;
+        font-size: 20px;
+        opacity: 0;
+        font-family: 'Josefin Slab', serif;
+        color: lightgrey;
+    }
+
+    #textBox1 {
+        top: -10%;
+    }
+
+    #textBox13 {
+        top: -20%;
+    }
+
+    #textBox15 {
+        top: -20%;
+    }
+
+    #bubble1 {
+        background-image: url(./imgs/erez.png);
+        background-position: 85%;
+    }
+
+    #bubble2 {
+        background-image: url(./imgs/wheel.png);
+    }
+
+    #bubble3 {
+        background-image: url(./imgs/wall.png);
+    }
+
+    #bubble4 {
+        background-image: url(./imgs/oldSoldier.png);
+    }
+
+    #bubble5 {
+
+        background-image: url(./imgs/withoutHijab.png);
+        background-position: 65%;
+    }
+
+
+
+    #bubble5:hover {
+        background-image: url(./imgs/withHijab.png);
+    }
+
+
+
+    #bubble6 {
+        background-image: url(./imgs/heart.gif);
+    }
+
+    #bubble7 {
+        background-image: url(./imgs/dancingWithHommam.png);
+        background-size: contain;
+    }
+
+    #bubble8 {
+        background-image: url(./imgs/hommamHaifa.png);
+        background-position: 0%;
+    }
+
+    #bubble9 {
+        background-image: url(./imgs/iphone1.png);
+        background-position: 0%;
+    }
+
+
+
+    #bubble10 {
+        background-image: url(./imgs/noID3.png);
+    }
+
+    #bubble11 {
+        background-image: url(./imgs/artAdventure.png);
+        background-size: contain;
+    }
+
+    #bubble12 {
+        background-image: url(./imgs/fart.png);
+        background-position: 0%;
+    }
+
+    #bubble13 {
+        background-image: url(./imgs/deepState.png);
+        background-size: contain;
+    }
+
+    #bubble14 {
+        background-image: url(./imgs/bettyHolocaust.png);
+    }
+
+    #bubble15 {
+        background-image: url(./imgs/rumi.png);
+        background-size: contain;
+    }
+
+
+    #bubble16 {
+        background-image: url(./imgs/balance.png);
+        background-size: contain;
+    }
+
+
+    #bubble17 {
+        background-image: url(./imgs/flight.png);
+        background-size: contain;
+    }
+
+
+    #bubble18 {
+        background-image: url(./imgs/henry.png);
+    }
+
+
+    #bubble19 {
+        background-image: url(./imgs/lemons.png);
+    }
+
+
+
+
+    #bubble20 {
+        background-image: url(./imgs/bettyCrying.png);
+    }
+
+    #bubble21 {
+        background-image: url(./imgs/chicken.png);
+        background-position: 0%;
+    }
+
+
+    #bubble22 {
+        background-image: url(./imgs/splitMind.png);
+        background-size: contain;
+    }
+
+    #bubble23 {
+        background-image: url(./imgs/ropesCourse.png);
+    }
+
+    #bubble24 {
+        background-image: url(./imgs/blueHill.png);
+    }
+
+    #bubble25 {
+        background-image: url(./imgs/hommam.png);
+        background-size: contain;
+    }
+
+    #bubble26 {
+        background-image: url(./imgs/baby.png);
+        background-size: contain;
+    }
+
+    #bubble27 {
+        background-image: url(./imgs/nufoth.png);
+    }
+
+
+
+
+    #bubble28 {
+        background-image: url(./imgs/lakota.png);
+    }
+
+    #bubble29 {
+        background-image: url(./imgs/zones.png);
+    }
+
+    #bubble30 {
+        background-image: url(./imgs/worldCup.png);
+        background-size: contain;
+    }
+
+    #bubble31 {
+        background-image: url(./imgs/fire.png);
+        background-size: contain;
+    }
+
+    #bubble32 {
+        background-image: url(./imgs/dialogue.png);
+    }
+
+    #bubble33 {
+
+        background-image: url(./imgs/quotes.png);
+        background-position: 0%;
+    }
+
+    #bubble34 {
+        background-image: url(./imgs/holocaustEmpathy.png);
+    }
+
+    #bubble35 {
+        background-image: url(./imgs/bayan.png);
+    }
+
+    #bubble36 {
+        background-image: url(./imgs/listen.png);
+        background-size: contain;
+    }
+
+    #bubble37 {
+        background-image: url(./imgs/whateverYouCan.png);
+        background-size: contain;
+        background-position: -40%;
+    }
+    /*#textBox2 {
+        background-image: url(./imgs/blueWatercolor2.png);
+        background-size: contain;
+    }
+*/
+
+    @media (max-device-width: 667px) {
+
+        
+#intro{
+	height:1000px;
+}
+        #intro-textbox {
+            font-size: 23px;
+        }
+        .bubble {
+        	left:5%;
+            width: 450px;
+            height: 450px;
+        }
+
+        .textBox {
+            top: 0%;
+            font-size: 23px;
+        }
+
+        #textBox14{
+        	top:10%;
+        }
+    }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <div id="intro">
+        <div id="intro-textbox">
+            <div id="title">
+                Touchstones</div>
+            <div id="subtitle">
+                <a href="http://seedsofpeace.org/">Seeds of Peace</a>, July 2018</div>
+            <div id="byline">
+                Molly Josephs
+                <br> Delegation Leader, United States
+            </div>
+            <hr> At a camp on a lake in Maine, mayflies molt on pines. They shed their skins to grow and re-make themselves.
+            <br>
+            <br>We too come to this camp to grow. Connected by the vast differences between us, we change with each other.
+            <br>
+            <br> We're Palestinian, Israeli, Egyptian, Jordanian, Pakistani, Indian, and American. For three weeks, we live, work, play, and are in constant conversation with each other. We hear each other's stories. We cry together. We laugh together. We wear the same green t-shirts, eat the same food, and sleep in bunks next to each other. On a small plot of land, our worlds and identities clash and come together to make something new.
+            <br>
+            <br> The relationships that grow here make us more human — more alive to each other's sufferings, humiliations, idiosyncracies, habits, and joys. In coming to know each other, we also come to know ourselves — our powers, biases, values, privileges, and the traumas we carry.
+            <br>
+            <br>I tried to capture some of moments that struck me during our three weeks together in 2018. Click on the sketches below to get a sense of some conversations and memories that I've been carrying with me.
+        </div>
+    </div>
+    <script type="text/javascript">
+    function makeBubble(i) {
+
+        var self = this;
+        self.containerLeft = document.createElement("div");
+        self.containerLeft.classList.add("containerLeft");
+        self.containerLeft.id = "containerLeft" + i;
+        document.body.appendChild(self.containerLeft);
+
+
+
+        self.containerRight = document.createElement("div");
+        self.containerRight.classList.add("containerRight");
+        self.containerRight.id = "containerRight" + i;
+        document.body.appendChild(self.containerRight);
+
+
+        self.bubble = document.createElement("div");
+
+
+        document.getElementById("containerLeft" + i).appendChild(bubble);
+        self.bubble.classList.add("bubble");
+        self.bubble.id = "bubble" + i;
+
+
+
+
+
+        var n = 1;
+        self.bubble.addEventListener("click", function() {
+            n = n + 1;
+            if (n % 2 == 0) { textBox.style.opacity = "0.9"; } else if (n % 2 == 1) { textBox.style.opacity = "0"; }
+
+        });
+
+
+        var textBox = document.createElement("div");
+        document.getElementById("containerRight" + i).appendChild(textBox);
+        textBox.classList.add("invisible");
+        textBox.classList.add("textBox");
+        textBox.id = "textBox" + i;
+
+
+
+    };
+
+
+
+
+
+
+    for (var i = 1; i < 38; i++) { makeBubble(i) };
+
+    document.getElementById("textBox1").innerHTML =
+
+        "<h1>" + "Answering Correctly" + "</h1>" +
+        "I drop off my stuff in our bunk before my roomate shows up. I feel awkward chosing a bed before she gets there, so I just put my stuff in a pile." +
+        "<br>" +
+        "<br>" + "When she arrives from Gaza, it's late at night. I see her in the dining hall exhausted and frazzled. I help her find her luggage and show her to our room."
+
+        +
+        "<br>" +
+        "<br>" +
+        "Lying in twin beds, we talk about our lives and jobs. I ask  many questions about the experience and logistics of leaving Gaza. It's become somewhat of an obsession of mine. The odd rules that govern these border crossings seem reveal how security and oppression intermingle and marry into procedurialized humiliation. I asked what it was like for her at the " + "<a href='https://en.wikipedia.org/wiki/Erez_Crossing'>" + "Erez checkpoint" + "</a>" + ".  She described many things, including a survey she had to fill out as a soldier looked on. It had a question that read: 'Who is directly responsible for the pain and suffering of the people living in Gaza?'" +
+        "<br>" +
+        "<br>" +
+        "Hearing about this odd survey reminded me of an excerpt from John Holt's 'How Children Fail':"
+
+        +
+        "<br>" +
+        "<br>" +
+        " 'A teacher who asks a question is tuned to the right answer, ready to hear it, eager to hear it, since it will tell him that his teaching is good and that he can go on to the next topic. He will assume that anything that sounds close to the right answer is meant to be the right answer. So, for a student who is not sure of the answer, a mumble may be his best bet...'"
+
+    document.getElementById("textBox2").innerHTML =
+        "<h1>" + "How much can you carry?" + "</h1>" +
+        "My roomate carried all of her stuff for the three weeks in a duffle bag. Moving in and out of Gaza through the " + "<a href='https://www.businessinsider.com/gaza-border-crossing-surreal-experience-2014-12'>" + "Erez Checkpoint" + "</a>" + " is a nightmarish, strangely bureaucratic ordeal. Before travelling, Gazans are required to get three permits from the PLO, Israel, and Jordan. Then, they walk thorugh liminal, fenced in areas that lead them through the Erez checkpoint into Israel. Upon arriving, they ascend into a shuttle that takes them to the Allenby Bridge where they walk through more checkpoints as they move from Israel into Jordan. Once in Jordan, they can finally get to Amman and get on a plane. All the while, Gazans carry their luggage in their arms." +
+        "<br>" +
+        "<br>" +
+
+        "Suitcases with wheels are not allowed."
+
+    document.getElementById("textBox3").innerHTML =
+        "<h1>" + "Getting to School on Time" + "</h1>" +
+
+        "A Palestinian man from Jerusalem arrived without his luggage. Elevan bags from that delgation had not been put on the plane. He thought it was due to extra security checks. No luggage — another intentional act of humiliation, he thought. He was wearing shorts and it was cold and wet outside. I lent him a pair of rain pants and luckily they fit." +
+        "<br>" + "<br>" +
+
+        "That night we stayed up late talking. He's a teacher. His grandfather was a rich man who lost his land in 1948 and who was so devasted by the war of 1967, he died of a heart attack."
+
+        +
+        "<br>" + "<br>" +
+        "We talked about the increasing fragmentation of the West Bank due to settlments, the wall, and road construction. He talked about how long it takes to get from place to place. Trips that used to take twenty minutes now take two hours." +
+        "<br>" + "<br>"
+
+
+    "Some of his students arrive to school at six in the morning because they can't predict how long it will take to get through the checkpoints. To make sure they arrive on time, they leave their houses in the wee hours of the morning."
+
+    document.getElementById("textBox4").innerHTML =
+
+        "<h1>" + "Old Men Preferred..." + "</h1>" +
+        "Late into the evening began a conversation about his experience of the daily humiliation of the checkpoints. 'Put your hand in your pocket too fast, and they'll shoot you, like nothing,' he said. 'You know when the checkpoints were really great?' he smiled facetiously, 'during the 2014 war the Gaza. With all younger men at war, older men—army reserves—ran the checkpoints.' These old guys, he described. They weren't as capricious as the eighteen year-olds with M16s."
+
+
+    document.getElementById("textBox5").innerHTML =
+
+        "<h1>" + "Public and Private" + "</h1>" +
+
+        "Before I was twenty-six, I had very few friends who wore hijabs. It's been only in the past five years, that I've become close to a few women who cover their hair." + "<br>" + "<br>" +
+
+        "My roommate wears a hijab. When we're hanging out in our bunk, we look like two girls having a sleepover. We both wear kid-like pajamas and ponytails." +
+        "<br>" + "<br>" +
+        "Our clothes and body language in this space looks very different from what happens in public. There, she's fully covered and I'm in athletic clothes. I'm struck by how similar we look in one space and how different we look in another. I'm suprised how navigating these two  separate worlds together, feels surprisingly intimate."
+
+    document.getElementById("textBox6").innerHTML =
+        "<h1>" + "The Heart that Loved Her" + "</h1>" +
+        "We were asked to share something about ourselves that can't be seen from the outside. A vibrant Jewish Israeli woman with hoop earrings, platform sneakers, and a bright smile said that she had four children and was a widow. Her husband had died six years ago, when he was forty-five. His organs were donated." + "<br>" + "<br>" + "As his organs were being assigned to their new owners, she asked where his heart, the heart that had loved her for over two decades, was going. When she was asked if it was OK that it would would be given to an Muslim Arab man, she said of course."
+
+    document.getElementById("textBox7").innerHTML =
+        "<h1>" + "Movement Partners" + "</h1>" +
+        "We do art and dance together. My favorite person to do the movement activities with is a man from " + "<a href='https://en.wikipedia.org/wiki/Jenin'>" + "Jenin" + "</a>" + ". He teaches English. Yesterday evening, he showed me pictures of his wife and children."
+
+        +
+        "<br>" + "<br>" +
+
+        "He tends to be quite and subdude, but during the movement exercises, we both look like four-year-olds! We make absurd faces, hop around, and giggle. I feel so grateful about getting to know someone from a world so different from my own this way."
+
+    document.getElementById("textBox8").innerHTML =
+        "<h1>" + "Beach Day" + "</h1>" +
+        "My dance partner told me about he and his family's day at the beach. The week before coming to camp, they had taken a trip to Haifa, Israel. He showed me pictures of the kids playing in the waves. In the photos he was smiling in a red shirt." + "<br>" + "<br>" +
+
+        "Although the drive to the beach is short and should take very little time in terms of distance, due to checkpoints, it takes hours. He explained, it's not easy for an ordinary Palestinian living in the West Bank get to Israel to go to the beach. They need permits, which can take months to receive, if they receive them at all." + "<br>" + "<br>" +
+
+        "Maybe he can go to the beach once per year, he told me."
+
+    document.getElementById("textBox9").innerHTML =
+        "<h1>" + "Charing a phone" + "</h1>" +
+        "My roommate from Gaza is always making sure to charge her phone whenever the opportunity presents itself. In Gaza, a phone is a source of freedom, choice, an escape. It's a connection to the internet and people and information from the outside world. But with three unpredictable hours of electricity a day, sometimes in the middle of the night, keeping your phone charged is a challenge. If you're sleeping when the electricity comes on, you'll miss it." +
+        "<br>" + "<br>" +
+        "My roommate told me that when she went to the West Bank once, the first thing she did was plug in her phone." +
+        "<br>" + "<br>" +
+
+        "I suggested that we buy a portable battery in the U.S. so that she could bring it back to Gaza. She explained that she couldn't because she's not allowed to bring such a battery" + "<a href='https://www.usnews.com/news/world/articles/2017-08-08/gazan-travelers-face-new-restrictions-from-israel'>" + "across the border" + "</a>" + ". It'll be confiscated."
+
+
+
+    document.getElementById("textBox10").innerHTML =
+        "<h1>" + "No IDs" + "</h1>" +
+
+        "One night before bed, my roommate mentions that she has this friend who doesn't have an ID. I wonder what she means by this and ask for clarification. Most Palestinians in Jerusalem, the West Bank, and Gaza have" + "<a href='https://www.aljazeera.com/news/2017/11/colour-coded-israeli-id-system-palestinians-171115164848669.html'>" + " ID cards " + "</a>" + "issued by the Israeli government. But, she explains that there are 1,500 people in Gaza who don't have IDs. They are not recognized by the PLO or by Israel. There is no governmental recognition that they exist at all. "
+
+    document.getElementById("textBox11").innerHTML =
+        "<h1>" + "Just fun" + "</h1>" + "My  partner in movement 'class' and I laugh while playing this game where we have to keep a long stick between our palms as we dance around. We're two giggling children except that we're both adults and I'm an American Jew and he's a Muslim Palestinian."
+
+    document.getElementById("textBox12").innerHTML =
+        "<h1>" + "Farts are always funny" + "</h1>" + "My dear friend from Palstine and I talk about everything. While sitting together on a school bus, we start talking about farts. Within ten seconds, we're laughing like crazy. Some things are just universally funny. "
+
+    document.getElementById("textBox13").innerHTML =
+        "<h1>" + "National Narratives" + "</h1>" + "In our dialogue session one morning, the facilitators ask each delegation to present our nation's mainstream national narrative. My partner and I decide to do a presentation where she's the 'face' of America and I'm the 'butt.' As the face, sharing the idealized versions of historical incidents that  we learn in school, and as the butt, my job is to give the uglier other side of the story. Each time she says something, I say 'that's one side of the story, but...')." +
+        "<br>" + "<br>" +
+        "She talks about the first Thanksgiving, I say 'but...' and talk about smallpox blankets. She talks about the Declaration of Indepenence and 'all men are created equal,' and I talk about how our forefathers allowed for slavery to continue. " +
+        "<br>" + "<br>" +
+        "When the other delegation leaders began asking questions, I began to start feeling defensive, not of the U.S. per se, but of evidence-based criticality. Many folks expressed that they believed that the U.S. actively supported and funded ISIS in order to harm, crusade against, and undercut Muslim people living in countries they wanted control over. Some people also expressed a belief that the U.S. caused 9/11 in order to begin the contemporary crusade against Muslim countries. A connection was, at some point, made to Jewish lobbyists in the U.S. and US ties to Israel." +
+        "<br>" + "<br>" +
+        "While I understand how these views could make sense, they are not what I have learned. I   agreed that the U.S. is an imperial power that had destroyed other countries, destabilized regions, and whose actions have resulted in the destruction of millions lives (e.g. the Iraq War), however, I shared my skepticism about their ideas about the U.S. having a literal Deep State that was conneted to American Jews. I talked about larger incentive structures, issues of campaign finance, Super PACs, andthe power of Evangelicals in America." + "<br>" + "<br>" +
+        "It made me think about how capable people think the U.S. government's foresight is, how the U.S's War on Terror' has destroyed so much, and it made me feel sad that our diet of information seems too be internet cheap, not high quality, investigative reporting and while there are many great things about this, there are also many conequences."
+
+
+
+    document.getElementById("textBox14").innerHTML =
+
+        "<h1>" + "Suffering" + "</h1>" + "<br>" +
+        "Sitting around a fire, my friend from Israel mentions how her mother was in a concentration camp. 'And they think they know suffering.' she mumbles to herself."
+
+    document.getElementById("textBox15").innerHTML =
+
+        "<h1>" + "The Field" + "</h1>" + "<br>" +
+
+
+        "We take a tour of camp and visit a memorial for a Palestinian seed killed while protesting in a Seeds of Peace t-shirt. The memorial sits near a stone with a line from a Rumi poem engraved on it, 'Out beyond ideas of wrongdoing and rightdoing there is a field. I'll meet you there.' While we read the engraving, we're standing on a field, the field alluded to in the poem." + "<br>" + "<br>" + " It's here, in this spot, that we have our first fight. A Palestian woman talks about the death of the seed, she knows his sister. He was shot in the neck at point-blank range, she says, by an Israeli soldier. An women from Israel corrects her. He was killed by a police officer. To the Palestinians, that is a technicality, the mention of which shows a lack of caring about the boy's death." + "<br>" + "<br>" + "The next day, in dialogue, we talk about the incident. We also set up some chairs in the middle. Four people go in at a time. One person speaks, the others listen." + "<br>" + "<br>" +
+        "The Palestinian woman brings in three Israelis to listen. She talks about racism, about feeling like they don't think her children are as valuable as hers. She cries. They listen. They hear her."
+
+    document.getElementById("textBox16").innerHTML =
+        "<h1>" + " Balancing Act" + "</h1>" + "<br>" +
+        "We have our second fight at the ropes course. We're told by two counselors that the task at hand is for all twenty-four of us to balance on a line on this see-saw. After that, the counselors stop talking. We're on our own." + "<br>" + "<br>" + "We distrubute ourselves by weight. We smush ourselves against each other. Everyone is talking and giving their opinion. We shout over each other. We assign a leader to arrange us and become is silent, except for 'shhhh-ing' each other. We try this way and that, but we can't do it. Finally, hot, sweaty, and on top of each other, we balance. We scream with joy. Our moment of pride is cut short when the counselors say it doesn't count. They point to one person who's sitting out. It's a gotcha. She was uncomfortable and their rules are totally arbitrary anyway. We react. We fight amongst ourselves." + "<br>" + "<br>"
+    "I analyze the situation with my movement partner. He feels like it was a set-up. A trick to make us fight. I feel like the counselors put too much attention on a technicality and prioritized arbitrary rules over people's comfort." + "<br>" + "<br>" +
+    "After this, there's a grouchiness in the air. I try to wash off the negative energy by going swimming in the lake."
+
+    document.getElementById("textBox17").innerHTML = ""
+    </script>
+</body>
+
+</html>
